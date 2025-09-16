@@ -23,7 +23,7 @@ type WorkItem = {
 const EDUCATION: EduItem[] = [
   {
     name: "MSc Computer Science",
-    place: "TBD",
+    place: "ETH Zürich",
     dates: "2025 - Present",
     status: "ongoing",
   },
