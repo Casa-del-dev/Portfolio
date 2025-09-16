@@ -24,14 +24,14 @@ const EDUCATION: EduItem[] = [
   {
     name: "MSc Computer Science",
     place: "TBD",
-    dates: "planned",
-    status: "planned",
+    dates: "2025 - Present",
+    status: "ongoing",
   },
   {
     name: "BSc Computer Science",
     place: "ETH Zürich",
-    dates: "2022 – Present",
-    status: "ongoing",
+    dates: "2022 – 2025",
+    status: "done",
   },
   {
     name: "High School",
