@@ -22,7 +22,7 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="last-updated">Last updated: 20.08.2025</div>
+      <div className="last-updated">Last updated: 18.10.2025</div>
     </div>
   );
 }

@@ -15,7 +15,9 @@ type WorkItem = {
   company?: string;
   logo?: string;
   startYear?: number;
+  startMonth: string;
   endYear?: number | "Present";
+  endMonth?: string;
   status: EduStatus;
   description?: string[];
 };
@@ -43,15 +45,28 @@ const EDUCATION: EduItem[] = [
 
 const WORK: WorkItem[] = [
   {
+    position: "GenAI R&D Engineer",
+    company: "ETH AI Center",
+    logo: "/Logos/AICENTER.png",
+    startYear: 2025,
+    startMonth: "Nov",
+    /* endYear: "Present", */
+    status: "planned",
+    description: [],
+  },
+  {
     position: "Full Stack Developer",
     company: "ASTAZ",
     logo: "/Logos/ASTAZ.png",
     startYear: 2025,
+    startMonth: "Jun",
     endYear: "Present",
     status: "ongoing",
     description: [
-      "Developing and maintaining web applications using React and Node.js.",
-      "Collaborating with cross-functional teams to deliver high-quality software solutions.",
+      "Maintain a website with 4,000+ registered users.",
+      "Deploy and operate the site on Hostpoint with a PHP backend.",
+      "Build and provide accessible admin functions for other team members.",
+      "Understand the needs of the committee and match them with possible technical solutions.",
     ],
   },
 ];
@@ -222,10 +237,23 @@ export default function Resume() {
                   {/* Years */}
                   {(item.startYear || item.endYear) && (
                     <div className="work-years">
-                      {item.startYear ?? "—"} –{" "}
-                      {item.endYear === "Present"
-                        ? "Present"
-                        : item.endYear ?? "—"}
+                      {item.startYear === item.endYear ? (
+                        <>
+                          {item.startMonth} – {item.endMonth} {item.endYear}
+                        </>
+                      ) : (
+                        <>
+                          {item.startMonth && `${item.startMonth} `}
+                          {item.startYear ?? "NaN"}
+                          {item.endYear === "Present"
+                            ? " – Present"
+                            : item.endYear
+                            ? ` – ${item.endMonth ? `${item.endMonth} ` : ""}${
+                                item.endYear
+                              }`
+                            : ""}
+                        </>
+                      )}
                     </div>
                   )}
 
