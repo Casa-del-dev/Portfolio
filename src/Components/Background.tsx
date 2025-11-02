@@ -50,9 +50,16 @@ const WORK: WorkItem[] = [
     logo: "/Logos/AICENTER.png",
     startYear: 2025,
     startMonth: "Nov",
-    /* endYear: "Present", */
-    status: "planned",
-    description: [],
+    endYear: "Present",
+    status: "ongoing",
+    description: [
+      "Developing and improving the front-end of the open-source EthelApp platform (desktop & mobile) using React and TypeScript",
+      "Implementing user interfaces and interaction flows that support 20,000+ students across STEM courses at ETH",
+      "Designing and implementing an interactive flow that enables ~2,000 students to upload and grade their exams simultaneously",
+      "Collaborating with researchers and instructors to design and iterate on educational AI tools",
+      "Ensuring smooth integration between front-end components and Python-based backend systems",
+      "Maintaining clear documentation and contributing to the open-source community under GNU-GPL",
+    ],
   },
   {
     position: "Full Stack Developer",
