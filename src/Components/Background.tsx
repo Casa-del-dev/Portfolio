@@ -53,7 +53,7 @@ const WORK: WorkItem[] = [
     endYear: "Present",
     status: "ongoing",
     description: [
-      "Developing and improving the front-end of the open-source EthelApp platform (desktop & mobile) using React and TypeScript",
+      "Developing and improving the front-end of the open-source EthelApp platform using React and TypeScript",
       "Implementing user interfaces and interaction flows that support 20,000+ students across STEM courses at ETH",
       "Designing and implementing an interactive flow that enables ~2,000 students to upload and grade their exams simultaneously",
       "Collaborating with researchers and instructors to design and iterate on educational AI tools",
