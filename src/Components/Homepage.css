@@ -138,12 +138,21 @@
   }
 }
 
+@media (max-width: 1090px) {
+  .section {
+    padding: 0 3rem;
+  }
+}
+
 @media (max-width: 470px) {
   .hero-typed {
     font-size: 2rem;
   }
   .hero-author {
     font-size: 1.05rem;
+  }
+  .section {
+    padding: 0 1.5rem;
   }
 }
 
